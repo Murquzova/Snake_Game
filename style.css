@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #275a32;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: #397647;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-shadow: 1px 5px 12px 7px rgba(0, 0, 0, 0.7),
+    1px 5px 24px 17px rgba(39, 90, 50, 0.74);
+  box-shadow: 1px 5px 12px 7px rgba(0, 0, 0, 0.7),
+    1px 5px 24px 17px rgba(39, 90, 50, 0.74);
+  margin-top: 20px;
+}
+.container div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.snake {
+  width: 80% !important;
+  height: 80% !important;
+  /* background-color:chartreuse; */
+  background: rgb(26, 165, 11);
+  background: linear-gradient(
+    90deg,
+    rgb(194, 247, 3) 44%,
+    rgb(32, 201, 13) 89%
+  );
+  border-radius: 50%;
+}
+.snake_head {
+  width: 80% !important;
+  height: 80% !important;
+  background-color: rgb(255, 251, 0);
+  border-radius: 50%;
+  position: relative;
+}
+
+.yemek {
+  width: 50%;
+  height: 50%;
+  border: none !important;
+  background-image: url(https://emojio.ru/images/apple-b/1f34e.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+p {
+  font-size: 40px;
+  color: white;
+  font-family: monospace;
+}
+
+h1 {
+  font-size: 60px;
+  color: white;
+  font-family: monospace;
+}
